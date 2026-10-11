@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.afsanora.pathora",
+      "sha256_cert_fingerprints": [
+        "02:F0:D5:1C:8A:65:AA:2B:41:DE:F6:2F:E1:37:B2:F8:25:90:A8:32:F3:D6:58:96:BD:57:22:C7:B8:11:F7:07",
+        "83:64:F5:AD:31:5F:7C:0F:12:63:C0:EC:91:E6:56:8B:44:3D:86:02:D9:43:DC:2B:0E:85:C4:13:9D:A7:72:A6"
+      ]
+    }
+  }
+]
