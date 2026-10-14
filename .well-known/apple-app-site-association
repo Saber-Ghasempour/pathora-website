@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "H42SZ3FK3L.com.afsanora.pathora"
+        ],
+        "components": [
+          {
+            "/": "/challenge/",
+            "?": {
+              "p": "?*"
+            },
+            "comment": "Shared puzzles only; the app validates the code."
+          }
+        ]
+      }
+    ]
+  }
+}
