@@ -8,7 +8,7 @@
 .story-step h3 { font-size: clamp(1.6rem, 3.2vw, 3.5rem); line-height: 1.04; letter-spacing: -.045em; }
 .story-step p { margin-top: .65em; max-width: 33ch; line-height: 1.6; }
 .story-step img { border: 1px solid #304b3430; border-radius: 7px; }
-@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .is-scrubbed { display: grid; grid-template-columns: .75fr 1fr; column-gap: 8%; }
   .is-scrubbed .story-steps { grid-column: 1; grid-row: 1; }
   .is-scrubbed .story-step { display: flex; min-height: max(274px, 57svh); padding-block: 35px; }
@@ -36,3 +36,20 @@
   .story-progress::before { content: ""; display: block; width: 100%; height: 100%; background: #294b42; transform-origin: left; transform: scaleX(var(--progress, 0)); }
 }
 .story-step img,.story-screen video{max-width:100%;height:auto}.store-badges{flex-wrap:wrap}.store-badge{width:fit-content}.store-badge img{max-width:100%}@media(max-width:760px){.story-step{grid-template-columns:minmax(0,1fr) 90px}.store-badge img{height:38px}.store-badge.google-play img{height:57px}}
+
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+  .puzzle-story.is-scrubbed { display: block; }
+  .is-scrubbed .story-stage {
+    z-index: 1;
+    top: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 12px;
+    pointer-events: none;
+    background: #dce6d2;
+  }
+  .is-scrubbed .story-screen { width: min(80%, 34svh, 280px); }
+  .is-scrubbed .story-screen video { display: block; }
+  .is-scrubbed .story-progress { margin-top: 8px; }
+  .is-scrubbed .story-step { min-height: 58svh; align-items: center; }
+}

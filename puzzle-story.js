@@ -1,5 +1,5 @@
 (() => {
-  const motion = matchMedia('(min-width: 761px) and (prefers-reduced-motion: no-preference)');
+  const motion = matchMedia('(prefers-reduced-motion: no-preference)');
   if (!('IntersectionObserver' in window)) return;
 
   const clamp = value => Math.min(1, Math.max(0, value));
@@ -78,3 +78,4 @@
 
   document.querySelectorAll('[data-scroll-story]').forEach(connectPuzzle);
 })();
+
